@@ -1,5 +1,5 @@
 const bdayBallons = (function(){
-    const density = 15; // concurrent balloon count
+    const density = 16; // concurrent balloon count
     const balloons = []; 
     const colors = ['yellow', 'green', 'blue', 'red'];
 
@@ -85,8 +85,6 @@ const bdayBallons = (function(){
             duration: 7500,
             delay: delay
         });
-
-
-        balloonAnimation.onfinish = () => { releaseBalloon(balloon) }
     }
 })();
+
